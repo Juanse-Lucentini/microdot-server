@@ -1,8 +1,7 @@
 # Aplicacion del servidor
-from boot import do_connect
 from microdot import Microdot, send_file
 
-app = Microdot
+app = Microdot()
 
 @app.route('/')
 async def index(request):

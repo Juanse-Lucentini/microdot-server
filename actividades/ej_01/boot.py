@@ -1,7 +1,7 @@
 # Configuracion inicial
-def do_connect()
+def do_connect():
     import network
-    sta_if = ntework.WLAN(network.STA_IF)
+    sta_if = network.WLAN(network.STA_IF)
     if not sta_if.isconnected():
         print('conectando')
         sta_if.active(True)
