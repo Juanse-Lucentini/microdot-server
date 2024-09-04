@@ -2,7 +2,6 @@
 from boot import do_connect
 from microdot import Microdot, send_file
 
-do_connect()
 app = Microdot
 
 @app.route('/')
