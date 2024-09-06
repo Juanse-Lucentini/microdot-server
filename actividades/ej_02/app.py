@@ -1,5 +1,6 @@
 # Aplicacion del servidor
 from microdot import Microdot, send_file
+from boot import led1, led2, led3
 
 app = Microdot()
 
