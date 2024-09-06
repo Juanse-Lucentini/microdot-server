@@ -9,11 +9,10 @@ def do_connect():
         while not sta_if.isconnected():
             pass
     print('network config:', sta_if.ifconfig())
+    
+do_connect()
 
 from machine import Pin
-
 led1 = Pin(32, Pin.OUT)
 led2 = Pin(33, Pin.OUT)
 led3 = Pin(25, Pin.OUT)
-
-do_connect()
