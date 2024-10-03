@@ -17,7 +17,7 @@ async def index(request, dir, file):
 
 @app.route('/led/toggle/<led>')
 async def led_toggle(request, led):
-    print('hola mundo')
+    print(led)
     if led == "led1":
         led1.value(not led1.value())
         print('hola mundo') 
